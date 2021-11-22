@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace PBET_Admin
 {
@@ -15,6 +16,38 @@ namespace PBET_Admin
         public Form1()
         {
             InitializeComponent();
+
+            //Datetime Picker Formats
+            dateTimeFrom.Format = DateTimePickerFormat.Custom;
+            dateTimeFrom.CustomFormat = "MM/dd/yyyy - hh:mm";
+
+            dateTimeTo.Format = DateTimePickerFormat.Custom;
+            dateTimeTo.CustomFormat = "MM/dd/yyyy - hh:mm";
+
+            //SQL TEST
+            using (SqlConnection sqlConnection = new SqlConnection(@"Data Source=samtah\sqlexpress;Initial Catalog=PBET_DB;Integrated Security=True"))
+            {
+                sqlConnection.Open();
+
+                using (SqlCommand sqlCommand = new SqlCommand("SELECT * FROM tbl_PaintlineCarts", sqlConnection))
+                {
+                    sqlCommand.CommandType = CommandType.Text;
+
+                    using(SqlDataAdapter sqlAdapter = new SqlDataAdapter(sqlCommand))
+                    {
+                        using(DataTable dt = new DataTable())
+                        {
+                            sqlAdapter.Fill(dt);
+                            dataGridView1.DataSource = dt;
+                        }
+                    }
+                }
+            }
+        }
+
+        private void dateTimeFrom_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

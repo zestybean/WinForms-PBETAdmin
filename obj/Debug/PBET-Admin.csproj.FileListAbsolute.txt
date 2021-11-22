@@ -1,0 +1,10 @@
+C:\Users\brando.lugo\source\repos\PBET-Admin\PBET-Admin\bin\Debug\PBET-Admin.exe.config
+C:\Users\brando.lugo\source\repos\PBET-Admin\PBET-Admin\bin\Debug\PBET-Admin.exe
+C:\Users\brando.lugo\source\repos\PBET-Admin\PBET-Admin\bin\Debug\PBET-Admin.pdb
+C:\Users\brando.lugo\source\repos\PBET-Admin\PBET-Admin\obj\Debug\PBET-Admin.csproj.AssemblyReference.cache
+C:\Users\brando.lugo\source\repos\PBET-Admin\PBET-Admin\obj\Debug\PBET_Admin.Form1.resources
+C:\Users\brando.lugo\source\repos\PBET-Admin\PBET-Admin\obj\Debug\PBET_Admin.Properties.Resources.resources
+C:\Users\brando.lugo\source\repos\PBET-Admin\PBET-Admin\obj\Debug\PBET-Admin.csproj.GenerateResource.cache
+C:\Users\brando.lugo\source\repos\PBET-Admin\PBET-Admin\obj\Debug\PBET-Admin.csproj.CoreCompileInputs.cache
+C:\Users\brando.lugo\source\repos\PBET-Admin\PBET-Admin\obj\Debug\PBET-Admin.exe
+C:\Users\brando.lugo\source\repos\PBET-Admin\PBET-Admin\obj\Debug\PBET-Admin.pdb
